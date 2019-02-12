@@ -68,11 +68,10 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Custom off-mode charger
-ifeq ($(WITH_AICP_CHARGER),true)
+ifneq ($(WITH_AICP_CHARGER),false)
 PRODUCT_PACKAGES += \
     aicp_charger_res_images \
-    font_log.png \
-    libhealthd.aicp
+    lineage_charger_anim
 endif
 
 # Extra tools
