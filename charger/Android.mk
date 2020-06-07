@@ -21,7 +21,8 @@ LOCAL_CFLAGS := -Werror
 LOCAL_C_INCLUDES := \
     system/core/healthd/include \
     system/core/base/include \
-    bootable/recovery/minui/include
+    bootable/recovery/minui/include \
+    frameworks/native/services/batteryservice/include
 ifneq ($(BACKLIGHT_PATH),)
     LOCAL_CFLAGS += -DHEALTHD_BACKLIGHT_PATH=\"$(BACKLIGHT_PATH)\"
 endif
